@@ -42,10 +42,10 @@ function App() {
    useEffect(()=>{password_generator()},[length,char,num,password_generator]);
   return (
    <div className='h-screen w-screen bg-gray-700 flex justify-center items-center'>
-     <div className='h-1/2 w-3/4 bg-gray-600 flex justify-center items-center'>
+     <div className='h-1/2 w-3/4 bg-gray-600 flex justify-center items-center shadow-lg shadow-black'>
       
-       <div className="h-3/4 w-full flex flex-col justify-center gap-5 items-center">
-            <div className="h-1/4 w-3/4 bg-white flex justify-between items-center">
+       <div className="h-3/4 w-full flex flex-col justify-center gap-5 items-center ">
+            <div className="h-1/4 w-3/4 bg-white flex justify-between items-center shadow-md shadow-gray-700">
                     <div className='p-2 h-full w-4/5 '><input  placeholder="Your generated Password"  ref = {password_selector} className='outline-none h-full w-full text-2xl font-thin text-black' type="text" readOnly value={pass}/></div>
                     <div className='h-full w-1/5 bg-blue-500 hover:bg-blue-600 flex justify-center items-center'><button onClick={copyToClipboard} className='text-white text-4xl font-medium '>Copy</button></div>
             </div>
